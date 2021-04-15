@@ -1,0 +1,21 @@
+%% Most important scripts
+% In all of these scripts toggle the switches in the main code and not within the sub scripts them selves.
+
+% working
+case - mainscript - no repoptimsation one time variable selection
+caseOptimise - optMainScript - reoptimisation one time variable selection 
+caseRep - repMainScript - reoptimisation recurrent variable selection
+
+% not working/ dont know
+caseReverse - revMainScript - performs the one time variable selsection backwards removing most relevant variables.
+
+%% Test results
+% everthing outside of the results archive is useful
+
+%% Future work
+% Simplify functions to take one variable and unpack things. caseRep is extremely cluttered. caseOptimise is less. case is even less. 
+
+%% Archive
+% Useless junk. It has the first GPNARX code that I used.
+
+ 
