@@ -1,21 +1,21 @@
-%% Most important scripts
-% In all of these scripts toggle the switches in the main code and not within the sub scripts them selves.
-
-% working
+%% Most important scripts - In all of these scripts toggle the switches in the main code and not within the sub scripts themselves. The function are general so should work for other clean data sets provided the dimensions are correct for the GP algorithm. Will need to replace which data set is loaded within the subscripts. 
+% Working 
 case - mainscript - no repoptimsation one time variable selection
 caseOptimise - optMainScript - reoptimisation one time variable selection 
 caseRep - repMainScript - reoptimisation recurrent variable selection
 
-% not working/ dont know
+% Not working/Don't know
 caseReverse - revMainScript - performs the one time variable selsection backwards removing most relevant variables.
 
 %% Test results
-% everthing outside of the results archive is useful
+% Everthing outside of the results archive is useful. In the archive there are experiments where the predictive relevances were not being removed according to importance it just removed the ranking from the first index everytime. In these experiments the performance deteriorated alot faster which is sort of a validation for the results presented in the report. 
 
-%% Future work
-% Simplify functions to take one variable and unpack things. caseRep is extremely cluttered. caseOptimise is less. case is even less. 
+%% Future work 
+% IMPORTANT- find a way to store inversions using GPML toolbox. Currently none of the loops involving the GP algorithm do this and it is extremely expensive. I didnt see a way to do so in GPML so might be worth replacing those functions with those from another toolbox. 
+% Simplify functions to take one variable and unpack things. caseRep is extremely cluttered. caseOptimise is less. case is even less.
+% Add in print statements to inform which part of the script is running. 
+% Might be cool to create a UI in MATLAB to easily perform GP-NARX with variable selection of choice using data of choice. It is also an opportunity to tidy up the code and add in error handling.
 
 %% Archive
-% Useless junk. It has the first GPNARX code that I used.
+% Useless. It has the first GPNARX code that I used.
 
- 
